@@ -3,13 +3,78 @@
   <head>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/master.css">
-    <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
     <meta charset="utf-8">
-    <title>Template</title>
+    <title>What Superhero are you?</title>
   </head>
   <body>
-
+    <div class="container">
+      <h1>What hero are you?</h1>
+      <p>fill out this survey to find out</p>
+      <form id="survey" class="" action="index.html" method="post">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-header">
+                <center>Would you rather know now everything your future self will learn, or go back to age 5 with everything you know now?</center>
+              </div>
+              <div class="card-body">
+                <label>
+                  <input type="radio" name="q1" value="a"> A. Know everything now
+                </label>
+                <label>
+                  <input type="radio" name="q1" value="b"> B. Go back in time
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-header">
+                <center>Would you rather be locked in a room that is constantly bright for a week or a room that is constantly dark for a week?</center>
+              </div>
+              <div class="card-body">
+                <label>
+                  <input type="radio" name="q2" value="a"> A. Bright room
+                </label>
+                <label>
+                  <input type="radio" name="q2" value="b"> B. Dark room
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-header">
+                <center>Would you rather the general public think you are a horrible person but your family be very proud of you or your family think you are a horrible person but the general public be very proud of you?</center>
+              </div>
+              <div class="card-body">
+                <label>
+                  <input type="radio" name="q3" value="a"> A. General public hates me
+                </label>
+                <label>
+                  <input type="radio" name="q3" value="b"> B. Family hates me
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Crunch the numbers</button>
+      </form>
+    </div>
+    <div class="container">
+      <div id=result class="card">
+        <div class="card-header">
+          <center>Your results are in!</center>
+        </div>
+        <img class="card-img-top" src="">
+        <div class="card-body">
+          <h2 class="card-title"></h2>
+          <p></p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
